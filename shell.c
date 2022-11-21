@@ -7,13 +7,6 @@
  * in 5 different child processes
  * Each child should be created by the same process (the father)
  * Wait for a child to exit before creating a new child
- *
- * Steps
- * 1. Print a promt
- * 2. Take input
- * 3. Run the input
- * 4. Repeat steps 1 to 3
- *
  * Return: Always 0.
  */
 int main(void)
@@ -21,8 +14,7 @@ int main(void)
 	char *argv[2], *buf;
 	size_t n;
 	ssize_t i;
-	pid_t fr;
-	int status;
+	int status, fr;
 
 	argv[1] = NULL;
 	n = 10;

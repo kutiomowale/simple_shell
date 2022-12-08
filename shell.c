@@ -3,10 +3,8 @@
 #include <unistd.h>
 #include <sys/wait.h>
 /**
- * main - a program that executes the command ls -l /tmp
- * in 5 different child processes
- * Each child should be created by the same process (the father)
- * Wait for a child to exit before creating a new child
+ * main - a first version of a super simple shell
+ * that can run commands with their full path, without any argument.
  * Return: Always 0.
  */
 int main(void)
